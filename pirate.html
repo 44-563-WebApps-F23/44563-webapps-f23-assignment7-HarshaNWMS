@@ -158,9 +158,10 @@
                  <img src="location.jpg" alt="Starting Location" id="location24" onclick="check(24)">
             </div>
         </div>
-
+        
+        <button class="btn btn-warning btn-start-timer" onclick="newGame()">New Game</button>
     </main>
-
+      
     <script>
         // Variables (Part 4)
         let ids = [];
@@ -246,7 +247,37 @@
         if (helpButton) {
             helpButton.addEventListener("click", updateHelpAndPenalty);
         }
-    </script>
+        function newGame() {
+    
+    checkCount = 0;
+    penalty = 0;
+    lastCheck = 0;
+    gameOver = false;
+
+    
+    treasureLocation = Math.floor(Math.random() * 25);
+    trapLocation = Math.floor(Math.random() * 25);
+
+    
+    while (trapLocation === treasureLocation) {
+      trapLocation = Math.floor(Math.random() * 25);
+    }
+
+
+    for (let i = 0; i < 25; i++) {
+      const id = `location${i}`;
+      const imageElement = document.getElementById(id);
+      imageElement.src = "location.jpg";
+      imageElement.style.borderColor = "white";
+    }
+
+
+    document.getElementById("locations").innerText = `Number of locations checked is ${checkCount}.`;
+    document.getElementById("penalty").innerText = `Penalty is ${penalty}.`;
+    document.getElementById("help").innerText = "Help report";
+  }
+      
+ </script>
 
 </body>
 </html>
