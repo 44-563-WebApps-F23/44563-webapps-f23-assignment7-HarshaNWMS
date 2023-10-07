@@ -3,6 +3,6 @@
 An assignment on java script modifying the DOM and using anonymous callback functions.
 -------
 # Hosted at
-[Treasure Hunt page]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarshaNWMS/pirate.html)
-[Reaction Time Check page](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarshaNWMS/react.html)
+[Treasure Hunt page]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarshaNWMS/pirate.html) <br>
+[Reaction Time Check page](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarshaNWMS/react.html)<br>
 [Meager page](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarshaNWMS/merger.html)
