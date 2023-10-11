@@ -31,7 +31,7 @@
 
 <body>
 	
-	<h1>Your Name builds a Merger</h1>
+	<h1>Harsha builds a Merger</h1>
   <div class="flex-container" id="target">
     <div>row item 1</div>
     <div>row item 2</div>
@@ -56,8 +56,7 @@
   <input type="text" id="newItemFront" placeholder="Enter item text">
   <button onclick="addFront()">Add front</button>
 
-  <p>Press the button to swap two random elements in the container.</p>
-  <button onclick="swap()">Swap</button>
+ 
 </body>
 
 <script>
@@ -110,31 +109,7 @@
     }
   }
 
-  function swap() {
-    const mergerItems = document.getElementsByClassName('merger');
-    const length = mergerItems.length;
-
-    if (length >= 2) {
-      const index1 = Math.floor(Math.random() * length);
-      let index2 = Math.floor(Math.random() * length);
-
-      // Ensure index2 is different from index1
-      while (index2 === index1) {
-        index2 = Math.floor(Math.random() * length);
-      }
-
-      const parent = document.getElementById('target');
-
-      const item1 = mergerItems[index1];
-      const item2 = mergerItems[index2];
-
-      const item1Next = item1.nextSibling;
-      const item2Next = item2.nextSibling;
-
-      parent.insertBefore(item1, item2Next);
-      parent.insertBefore(item2, item1Next);
-    }
-  }
+  
 </script>
 
 </html>
